@@ -1,0 +1,386 @@
+/*
+font-family: 'Arvo', serif;
+font-family: 'Barlow', sans-serif;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Bigelow Rules', cursive;
+font-family: 'Catamaran', sans-serif;
+font-family: 'Comfortaa', cursive;
+font-family: 'Fredoka', sans-serif;
+font-family: 'Gravitas One', cursive;
+font-family: 'Hubballi', cursive;
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+
+*/
+
+* {
+  /*  padding: 0;
+    margin: 0;*/
+  box-sizing: border-box;
+}
+
+//SASS VARIABLES
+$body-Color: #0A2647;
+$p-fonts: 'Montserrat', sans-serif;
+$header-fonts: 'IBM Plex Sans', sans-serif;
+
+p {
+  font-family: $p-fonts;
+  color: whitesmoke;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: whitesmoke;
+  font-family: $header-fonts;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+
+}
+
+
+body {
+
+  .gradient {
+    background: linear-gradient(90deg, rgba(255, 23, 228, 1) 0%, rgba(134, 251, 251, 1) 100%);
+    height: 2px;
+  }
+
+
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: $body-Color;
+
+  .navbar {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 80%;
+    padding: 1rem;
+    //border: 1px solid whitesmoke;
+
+
+    h1 {
+      a {
+        font-family: 'Arvo', serif;
+      }
+    }
+
+
+    ul {
+
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      align-items: center;
+
+    }
+
+    li:first-child {
+      flex-basis: 100%;
+      text-align: center;
+      //border: 1px solid orangered;
+    }
+
+
+    a {
+      color: whitesmoke;
+      text-decoration: none;
+      display: block;
+    }
+
+    a:hover {
+      color: magenta;
+      transition: color;
+    }
+
+    .button {
+      background-color: #ff00ff;
+      padding: 0.5rem;
+      border-radius: 5px;
+    }
+
+    .button:hover {
+      color: whitesmoke;
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+
+    @media screen and (min-width: 426px) {
+
+      li:first-child {
+        flex-basis: auto;
+        margin-right: auto;
+        text-align: left;
+      }
+    }
+
+  }
+
+
+  nav [class*="fa-"] {
+    font-size: 150%;
+    color: aqua;
+  }
+
+  nav h1 [class*="fa"] {
+    font-size: 100%;
+  }
+
+
+  .wrapper {
+    padding: 4rem 1rem 10rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .name {
+      span {
+        font-family: 'Comfortaa', cursive;
+        display: block;
+        color: #00FFAB;
+        font-size: 4rem;
+      }
+    }
+
+    p {
+      line-height: 1.5;
+
+      a {
+        color: whitesmoke;
+      }
+
+      a:hover {
+        color: orangered;
+        text-decoration: none;
+      }
+    }
+
+    h1 {
+      span {
+        color: orangered;
+      }
+    }
+  }
+
+
+  .section-plum {
+
+    background-color: purple;
+
+
+    .contact {
+      //border: 2px solid whitesmoke;
+      width: 400px;
+      padding: 3rem 0;
+      margin: 0 auto;
+      text-align: center;
+      background-color: purple;
+
+      .btn {
+        font-size: 1.5rem;
+        background-color: #ff00ff;
+        padding: 0.5rem;
+        border-radius: 5px;
+        color: whitesmoke;
+
+        text-decoration: none;
+
+        &:hover {
+          color: black;
+          text-decoration: none;
+        }
+      }
+
+      p:last-child {
+        margin-top: 3rem;
+      }
+
+
+      h2 {
+        margin: 10px 0;
+      }
+
+    }
+
+  }
+
+  //My Projects Section
+
+  .section-blue {
+    background-color: #014F7EFF;
+
+    .projects {
+      padding: 1rem;
+
+
+      h2 {
+        font-size: 2.5rem;
+        margin-bottom: calc(2.5rem * 1.5);
+      }
+
+      h3 {
+        color: aqua;
+      }
+
+      h4 {
+        font-size: 1rem;
+        //font-weight: ;
+      }
+
+      .blackbox {
+        background-color: #181D31;
+        padding: 1rem;
+        border-radius: 10px;
+        color: whitesmoke;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+
+      ul {
+        color: whitesmoke;
+        list-style: none;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        font-size: 1rem;
+      }
+
+      img {
+        margin: 2rem 0 4rem 0;
+        border-left: 1px solid aqua;
+        border-top: 1px solid aqua;
+        border-radius: 25px;
+        padding: 1rem;
+
+      }
+
+      a {
+        color: mediumpurple;
+
+        &:hover {
+          color: orangered;
+        }
+      }
+
+
+    }
+
+
+    @media screen and (min-width: 550px) {
+
+      article {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: 1rem;
+      }
+
+      .text {
+        order: 2;
+        text-align: right;
+        grid-column: 5/11;
+        grid-row: 1/2;
+      }
+
+      .projects {
+
+        img {
+          grid-column: 1/6;
+          grid-row: 1/2;
+        }
+
+
+        ul {
+          justify-content: flex-end;
+        }
+
+      }
+
+      .reverse {
+
+        .text{
+          grid-column: 1/7;
+          text-align: left;
+          grid-row: 1/2;
+          order: 2;
+
+        }
+
+        img{
+          grid-column: 6/11;
+          grid-row: 1/2;
+        }
+
+        ul{
+          justify-content: flex-start;
+        }
+
+      }
+
+
+    }
+
+
+  }
+
+
+  .footer {
+
+    padding: 4rem 0;
+    text-align: center;
+
+    ul {
+      //border: 1px solid white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+
+    }
+
+    @media screen and (max-width: 374px) {
+      h2 {
+        text-align: center;
+      }
+    }
+
+    li {
+      margin: 20px 10px;
+      list-style: none;
+
+    }
+
+    span {
+      color: whitesmoke;
+    }
+
+
+  }
+
+  footer [class*="fa-"] {
+    font-size: 200%;
+    color: magenta;
+  }
+
+
+}
+
+
+
+

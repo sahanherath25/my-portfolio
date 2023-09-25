@@ -1,0 +1,269 @@
+/*
+font-family: 'Arvo', serif;
+font-family: 'Barlow', sans-serif;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Bigelow Rules', cursive;
+font-family: 'Catamaran', sans-serif;
+font-family: 'Comfortaa', cursive;
+font-family: 'Fredoka', sans-serif;
+font-family: 'Gravitas One', cursive;
+font-family: 'Hubballi', cursive;
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+
+*/
+* {
+  /*  padding: 0;
+    margin: 0;*/
+  box-sizing: border-box;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: whitesmoke;
+  font-family: "IBM Plex Sans", sans-serif;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: #0A2647;
+}
+body .gradient {
+  background: linear-gradient(90deg, rgb(255, 23, 228) 0%, rgb(134, 251, 251) 100%);
+  height: 2px;
+}
+body .navbar {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 80%;
+  padding: 1rem;
+}
+body .navbar h1 a {
+  font-family: "Arvo", serif;
+}
+body .navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+body .navbar li:first-child {
+  flex-basis: 100%;
+  text-align: center;
+}
+body .navbar a {
+  color: whitesmoke;
+  text-decoration: none;
+  display: block;
+}
+body .navbar a:hover {
+  color: magenta;
+  transition: color;
+}
+body .navbar .button {
+  background-color: #ff00ff;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+body .navbar .button:hover {
+  color: whitesmoke;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+@media screen and (min-width: 426px) {
+  body .navbar li:first-child {
+    flex-basis: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+}
+body nav [class*=fa-] {
+  font-size: 150%;
+  color: aqua;
+}
+body nav h1 [class*=fa] {
+  font-size: 100%;
+}
+body .wrapper {
+  padding: 4rem 1rem 10rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body .wrapper .name span {
+  font-family: "Comfortaa", cursive;
+  display: block;
+  color: #00FFAB;
+  font-size: 4rem;
+}
+body .wrapper p {
+  line-height: 1.5;
+}
+body .wrapper p a {
+  color: whitesmoke;
+}
+body .wrapper p a:hover {
+  color: orangered;
+  text-decoration: none;
+}
+body .wrapper h1 span {
+  color: orangered;
+}
+body .section-plum {
+  background-color: purple;
+}
+body .section-plum .contact {
+  width: 400px;
+  padding: 3rem 0;
+  margin: 0 auto;
+  text-align: center;
+  background-color: purple;
+}
+body .section-plum .contact .btn {
+  font-size: 1.5rem;
+  background-color: #ff00ff;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+body .section-plum .contact .btn:hover {
+  color: black;
+  text-decoration: none;
+}
+body .section-plum .contact p:last-child {
+  margin-top: 3rem;
+}
+body .section-plum .contact h2 {
+  margin: 10px 0;
+}
+body .section-blue {
+  background-color: #014f7e;
+}
+body .section-blue .projects {
+  padding: 1rem;
+}
+body .section-blue .projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3.75rem;
+}
+body .section-blue .projects h3 {
+  color: aqua;
+}
+body .section-blue .projects h4 {
+  font-size: 1rem;
+}
+body .section-blue .projects .blackbox {
+  background-color: #181D31;
+  padding: 1rem;
+  border-radius: 10px;
+  color: whitesmoke;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+body .section-blue .projects ul {
+  color: whitesmoke;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 1rem;
+}
+body .section-blue .projects img {
+  margin: 2rem 0 4rem 0;
+  border-left: 1px solid aqua;
+  border-top: 1px solid aqua;
+  border-radius: 25px;
+  padding: 1rem;
+}
+body .section-blue .projects a {
+  color: mediumpurple;
+}
+body .section-blue .projects a:hover {
+  color: orangered;
+}
+@media screen and (min-width: 550px) {
+  body .section-blue article {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1rem;
+  }
+  body .section-blue .text {
+    order: 2;
+    text-align: right;
+    grid-column: 5/11;
+    grid-row: 1/2;
+  }
+  body .section-blue .projects img {
+    grid-column: 1/6;
+    grid-row: 1/2;
+  }
+  body .section-blue .projects ul {
+    justify-content: flex-end;
+  }
+  body .section-blue .reverse .text {
+    grid-column: 1/7;
+    text-align: left;
+    grid-row: 1/2;
+    order: 2;
+  }
+  body .section-blue .reverse img {
+    grid-column: 6/11;
+    grid-row: 1/2;
+  }
+  body .section-blue .reverse ul {
+    justify-content: flex-start;
+  }
+}
+body .footer {
+  padding: 4rem 0;
+  text-align: center;
+}
+body .footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 374px) {
+  body .footer h2 {
+    text-align: center;
+  }
+}
+body .footer li {
+  margin: 20px 10px;
+  list-style: none;
+}
+body .footer span {
+  color: whitesmoke;
+}
+body footer [class*=fa-] {
+  font-size: 200%;
+  color: magenta;
+}
+
+/*# sourceMappingURL=style.css.map */
